@@ -7,7 +7,7 @@ function TableRow(props) {
      
                 <tr key={props.id.value}>
                     <td><img src={props.picture.thumbnail}/></td>
-                    <td>{props.name.first} {props.name.last}</td>
+                    <td> {props.name.first} {props.name.last}</td>
                     <td>{props.phone}</td>
                     <td>{props.email}</td>
                     <td>{props.dob.date}</td>

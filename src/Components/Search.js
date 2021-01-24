@@ -7,7 +7,8 @@ class Search extends Component {
     state = {
         resArray: [],
         searchTerm: "",
-        filteredArray: []
+        filteredArray: [],
+        sortFlag: false
     }
 
     getUsers = () => {
@@ -17,7 +18,7 @@ class Search extends Component {
 
 
         API.get100Users().then(res => {
-            // console.log(res)
+
             this.setState({ resArray: res.data.results })
         })
             .catch(err => console.log(err))
@@ -28,13 +29,26 @@ class Search extends Component {
 
     }
 
+    sortUsers = (arr, sortFlag) => {
+
+        if (sortFlag) {
+            this.setState({ sortFlag: !sortFlag })
+            return arr.sort((a, b) => (a.name.first > b.name.first ? 1 : -1))
+        } else {
+            this.setState({ sortFlag: !sortFlag })
+            return arr.sort((a, b) => (a.name.first < b.name.first ? 1 : -1))
+        }
+
+    }
+
+
+
     onChange = SyntheticBaseEvent => {
         let searchTerm = SyntheticBaseEvent.target.value.toLowerCase()
         console.log("this is the state " + this.state.searchTerm)
         this.setState({ searchTerm: searchTerm })
 
 
-        // if (searchTerm !== "") {
         let employees = this.state.resArray.filter(user => (
 
             user.name.first.toLowerCase().includes(searchTerm) ||
@@ -53,13 +67,22 @@ class Search extends Component {
 
 
 
-    /* <button onClick={this.onSubmit} type="button" class="btn btn-info"></button>, */
+
 
 
 
     render() {
-        return ([
-            <input onChange={this.onChange} className="ml-md-3" type="text" id="myInput" placeholder="Search for names.."></input>, <hr />, <Table{...this.state} />]
+        return (
+
+            <div className="container-fluid">
+                <div class="d-flex flex-row justify-content-center ">
+                    <input onChange={this.onChange} className="col-sm-10 ml-md-3" type="text" id="filterSearch" placeholder="Search for names.."></input>
+                </div>
+                <hr />
+                <Table{...this.state} sortUsers={this.sortUsers} />
+            </div>
+
+
         )
     }
 }
