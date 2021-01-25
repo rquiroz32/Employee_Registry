@@ -7,7 +7,7 @@ This was our first React assignment, requirements were to create a page that mad
 *[Installation](#installation)
 *[Usage](#usage)
 *[Contributing](#Contributing)
-*[Testing](#Testing)
+*[DeployedApp](#DeployedApp)
 *[Questions](#Questions)
 *[License](#License)
 
@@ -21,8 +21,8 @@ Feel free to use without my prior knowledge or consent for whatever is desired.
 ## Contributing
 To report bugs or suggest enhancements please use my contact info listed further down below
 
-## Testing
-
+## DeployedApp
+https://rquiroz32.github.io/Employee_Registry/
 
 ## Questions
 * https://github.com/rquiroz32
