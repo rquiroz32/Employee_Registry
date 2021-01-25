@@ -1,6 +1,6 @@
-# Sample Title          [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Employee Registry         [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
-This is a description for my readme generator app
+This was our first React assignment, requirements were to create a page that made an api call to populate a table with users, and allow for search and sort.
 
 ## Table of Contents
 
@@ -13,20 +13,20 @@ This is a description for my readme generator app
 
 
 ## Installation
-First run npm install inquirer to install the dependencies, then run it from the cmd line
+npm install to lay down dependencies then npm start to start up the application.
 
 ## Usage
-You are free to use this as you please without credit or permission from me.
+Feel free to use without my prior knowledge or consent for whatever is desired.
 
 ## Contributing
 To report bugs or suggest enhancements please use my contact info listed further down below
 
 ## Testing
-Try using special characters and numbers to see what happens !
+
 
 ## Questions
-* https://github.com/rquirz32
-* or email me at: rquiroz@test.com
+* https://github.com/rquiroz32
+* or email me at: rquiroz3290@gmail.com
 
 ## License
 This application is covered under the GNU GPL v3 license 
