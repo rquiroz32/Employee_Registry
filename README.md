@@ -4,12 +4,12 @@ This was my first React project, where I created a page that makes an api call t
 
 ## Table of Contents
 
-*[Installation](#installation)
-*[Usage](#usage)
-*[Contributing](#Contributing)
-*[DeployedApp](#DeployedApp)
-*[Questions](#Questions)
-*[License](#License)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#Contributing)
+* [DeployedApp](#DeployedApp)
+* [Questions](#Questions)
+* [License](#License)
 
 
 ## Installation
