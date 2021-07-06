@@ -1,6 +1,6 @@
 # Employee Registry         [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
-This was our first React assignment, requirements were to create a page that made an api call to populate a table with users, and allow for search and sort.
+This was my first React project, where I created a page that makes an api call to https://randomuser.me/ that populates a table with users, and allows for searching and sorting by every field.
 
 ## Table of Contents
 
